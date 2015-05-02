@@ -1,0 +1,267 @@
+{
+    "navlist": {
+        "title": {
+			"placesmenu"  : "PVR Gay",
+            "browselist"  : "Navegar",
+            "fullcatlist" : "Lista por Categorías",
+            "alphalist"   : "Lista Alfabética",
+            "catList"     : "Categorías",
+            "singleday"   : "Todo en un Día",
+            "map"         : "Mapa PV Gay",
+            "settings"    : "Ajustes",
+            "myfavorites" : "Mis Favoritos",
+            "mynotes"     : "Mis Notas",
+            "gallery"     : "Fotos",
+			"recents"     : "Visto Recientemente"
+        },
+        "group" :  {
+            "directory" : "Directorio",
+            "calendar"  : "Calendario",
+            "map"       : "Mapa",
+            "settings"  : "Ajustes",
+            "favorites" : "Mi PV Gay",
+            "gallery"   : "Galeria"
+        }
+    },
+	
+    "nav" : {
+        "button" : {
+            "back"      : "Regreso",
+            "back2main" : "Directorio de PVR ",
+            "back2map"  : "Mapa de PVR",
+            "favorites" : "Favoritos"
+        },
+        "tab" : {
+            "places"    :  "negocios",
+            "today"     :  "eventos",
+            "map"       :  "mapa",
+            "favs"       :  "favoritos",
+            "settings"  :  "ajustes"
+        },
+        "msg" : {
+            "toplist"   : "Comienzo de la Lista",
+            "endlist"   : "Final de la Lista"
+        }
+    },
+	
+    "buttons" : {
+        "cancel" : "Cancelar",
+        "save"   : "Guardar",
+        "done"   : "Guardar",
+        "more"   : "mas info",
+		"yes"    : "Sí",
+		"no"     : "No",
+		"clear"  : "Borrar"
+    },
+	
+    "places" : {
+        "title" : "Directorio de PVR Gay",
+        "menu" : {
+            "title"  : "Directorio de PVR Gay"
+        },
+        "tab" : {
+            "info"   : "Info",
+            "photos" : "Fotos",
+            "events" : "Eventos",
+            "menu"   : "Menú",
+            "map"    : "Mapa"
+        },
+        "categories": {
+            "daylife" : {
+                "menuName" : "Vida Diurna",
+                "auxText"  : "Actividades, tours de un día, puntos de interés"
+            },
+            "nightlife" : {
+                "menuName" : "Vida Nocturna",
+                "auxText"  : "Bares, clubes, discotecas, salones, cantinas, antros"
+            },
+            
+            "shows" : {
+                "menuName" : "Espectaculos",
+                "auxText"  : "Comedia Realizaciones, Musicales, Obras de Teatro y más"
+            
+            },
+            "restaurants" : {
+                "menuName" : "Restaurantes",
+                "auxText"  : "De los elegantes restaurantes y puestos de tacos"
+            },
+            "gymspa" : {
+                "menuName" : "Gimnasio y Spa",
+                "auxText"  : "Servicios de spa, masajes, gimnasio, centros de salud"
+            },
+            "galleries" : {
+                "menuName" : "Galerías de Arte",
+                "auxText"  : "Contemporánea, indígenas y tradicionales galerías de arte"
+            },
+            "shopping" : {
+                "menuName" : "Compras",
+                "auxText"  : "Muebles, juguetes sexuales, ropa, gafas de sol, ropa íntima"
+            },
+            "lodging" : {
+                "menuName" : "Lodging",
+                "auxText"  : "Gay Vallarta's GLBT Hotels, Resorts and B&Bs"
+            },
+            "realestate" : {
+                "menuName" : "Real Estate",
+                "auxText"  : "Puerto Vallarta's Realtors"
+            },
+            "services" : {
+                "menuName" : "Services",
+                "auxText"  : "Los organizadores del evento, conserjería, médico, gráfico, renta"
+            },
+            "all" : {
+                "menuName" : "Todas las Categorías",
+                "auxText"  : "Lista completa categorizado"
+            },
+            "alpha" : {
+                "menuName" : "Lista Alfabética",
+                "auxText"  : "Lista completa de los alfabética de negocios"
+            }
+        }
+    },
+	
+    "events" : {
+        "button" : {
+            "events"   : "Evento",
+            "tours"    : "Visita",
+            "meetings" : "Reunion",
+            "promos"   : "Ofertas",
+            "all"      : "Todos"
+        },
+        "tab" : {
+            "info" : "Info",
+             "map" : "Mapa"
+        }
+    },
+	
+    "settings" : {
+        "title" : "Ajustes",
+		
+		"textsize": {
+			"fieldlabel"   : "Tamaño del Texto",
+			"title"        : "Ajustar el Tamaño de la Fuente"
+		},
+        "gps"   : {
+            "title"        : "Ubicación en el Mapa",
+            "enable"       : "Activar el GPS",
+            "directions"   : "Mostrar Camino",
+            "instructions" : ""
+        },
+         "notes" : {
+            "fieldlabel"   : "Mostrar en los listados",
+            "title" : "Mis Notas"
+        },
+        "lang"  : {
+            "title"   : "Seleccione el Idioma",
+            "english" : "Inglés",
+            "spanish" : "Español",
+            "french"  : "Francés"
+        }
+    },
+	
+    "mapa": {
+        "button" : {
+            "pvr"       : "PVR",
+            "gaypvr"    : "PVR Gay",
+            "olasaltas" : "Olas Altas",
+            "cardenas"  : "Cardenas"
+        },
+        "settings" : {
+            "title"        : "Marcadores",
+            "favs"         : "favoritos",
+            "atms"         : "atms",
+            "bars"         : "bares",
+            "restaurants"  : "restaurantes",
+            "hotels"       : "hoteles",
+            "gyms"         : "gyms",
+            "shopping"     : "compras",
+            "tours"        : "excursiones",
+            
+            "tourdesk"     : "conserje",
+            "org"          : "organizaciones",
+            "re"           : "bienes raíces",
+            "events"       : "eventos",
+            "beaches"      : "clubes de playa",
+            "gallery"      : "galería",
+            "cafe"         : "café",
+            "spa"          : "spas",
+            
+            
+            "other"        : "otros",
+            "instructions" : "just do it"
+        },
+		"choices" : {
+			"panto" : "acercar a la zona",
+			"chgmarkers" : "cambiar las categorías que muestran"
+		}
+    },
+	
+    "gallery" : {
+        "toolbar" : {
+            "title"     : "Galeria",
+            "album"     : "Álbum de Fotos: ",
+            "albums"    : "Álbumes de Fotos",
+            "moreinfo"  : "mas info"
+        },
+        "group" : {
+            "albums"    : "Álbum de Fotos",
+            "favs"      : "Negocios Favoritos",
+            "biz"       : "Categorías Negocios"
+        }
+    },
+	
+	"browse" : {
+		"button" : {
+			"overview"   : "conjunto",
+			"categories" : "categorías",
+			"characteristics" : "rasgo",
+			"cuisines"  : "cocinas",
+			"nearby"    : "cercano"
+		}
+	},
+	
+	
+    "misc" : {
+		"nothingOnFile" : "¡nada en el archivo!",
+        "bottomTitle"   : "Bottom Toolbar",
+        "loadLocaleMsg" : "Cargando...",
+		
+		"mapnolocation" : "ninguna información ubicación",
+        "favorites"     : "Favoritos",
+		"recently"      : "Visto recientemente",
+        "noFavsYet"     : "¡Aún No Hay Favoritos!",
+        "noFavsYetText" : "Selecciona tus favoritos en cualquier momento usted está buscando en una lista pulsando la estrella en la esquina superior derecha.",
+        "noNotesYet"     : "¡Sin embargo Notas!",
+        "noNotesYetText" : "Añadir sus notas en cualquier momento usted está buscando en una lista pulsando en el icono de notas en la esquina superior derecha."
+    },
+	
+    "trans" : {
+        "Calendar"      : "Calendar",
+        "Phone"         : "Phone: ",
+        "noEventsMsg"   : "No hay eventos",
+        "SorryNoImagesFor" : "Lo sentimos, No hay imágenes para "
+    },
+	
+	"cuisine": {
+		"title" : "Elegir Cocinas",
+		"button": {
+			"clear" : "Borrar",
+			"checkall": "Marque Todas"
+		}
+	},
+
+    "months" : {
+        "1"  : "Enero",
+        "2"  : "Febrero",
+        "3"  : "Marzo",
+        "4"  : "Abril",
+        "5"  : "Mayo",
+        "6"  : "Junio",
+        "7"  : "Julio",
+        "8"  : "Agosto",
+        "9"  : "Septiembre",
+        "10" : "Octobre",
+        "11" : "Noviembre",
+        "12" : "Diciembre"
+    }
+}

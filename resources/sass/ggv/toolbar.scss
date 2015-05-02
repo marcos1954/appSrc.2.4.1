@@ -1,0 +1,85 @@
+.ggv-tablet {
+		.x-toolbar {
+		padding: 0 0.2em;
+		overflow: hidden;
+		height: 3em;
+	}
+
+	.x-container.ggv-statusbar {
+		background-color: black !important;
+		background-image: none;
+		color: white;
+
+		height: 1.4em;
+		min-height: 1.2em;
+		padding: .2em 2em 0 2em;
+		font-size: .8em;
+
+	}
+    
+}
+
+div#mainStatusBar {    
+        .x-layout-box {
+                position: relative;
+                top: 5px;
+        }
+}
+
+
+.ggv-phone {
+      
+	.x-tabbar .x-button .x-button-icon:before {
+	    font-size: 1.2em;
+	    line-height: 2.3em;
+	}
+
+	.x-toolbar .x-button .x-button-icon:before {
+	    font-size: 1.2em;
+	    line-height: 1.3em;
+	}
+	//
+	//
+	//
+	.x-toolbar {
+		overflow: hidden;
+
+		padding: 0 0.2em;
+		/* height: 2.3em; */
+	}
+
+	//
+	//
+	//
+	.x-toolbar .x-button.x-button-ggv .x-button-label,
+	.x-toolbar .x-button .x-hasbadge .x-badge,
+	.x-hasbadge .x-toolbar .x-button .x-badge {
+		font-size: .7em;
+	}
+	//
+	//
+	//
+	//
+	.x-title {
+		text-align: center;
+		font-weight: normal;
+		white-space: nowrap;
+		overflow: hidden;
+
+		line-height: 2.0em;
+		font-size: 1.0em;
+		margin: 0 0.3em;
+		max-width: 100%;
+	}
+	//
+	//
+	//
+	//
+	.x-title .x-innerhtml {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: initial;
+
+		padding: 0 .3em;
+	}
+}

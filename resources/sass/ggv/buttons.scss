@@ -1,0 +1,133 @@
+.x-button-ggv {
+	background-color: #343 !important;
+	background-image: none !important;
+	color: #ffffff !important;
+}
+
+.x-button-ggv.x-button-pressed,
+.x-button-ggv.active {
+	background-color: #565 none !important;
+	color: yellow !important;
+}
+
+.x-button-ggv.x-button-pressing {
+    background-color: #898 none !important;
+}
+
+.x-tabbar-dark .x-button.faved .x-button-icon:before,
+.x-toolbar-dark .x-button.faved .x-button-icon:before {
+	color: #cc0 !important;
+	background-image: none !important;
+}
+
+.x-button-label {
+    text-rendering: optimizelegibility;
+}
+
+.ggv-tablet .x-button-ggv {
+	font-size: 15px;
+
+	background:            transparent none;
+	border:                0;
+	padding:               0.25em 0.8em;
+	height:                1.5em;
+	-webkit-border-radius: 0.75em;
+	-moz-border-radius:    0.75em;
+	-ms-border-radius:     0.75em;
+	-o-border-radius:      0.75em;
+	border-radius:         0.75em;
+}
+
+.ggv-tablet .x-segmentedbutton-ggv .x-button-ggv {
+	border:      black 1px solid;
+	height:                2.4em;
+	-webkit-border-radius: 1.2em;
+	-moz-border-radius:    1.2em;
+	-ms-border-radius:     1.2em;
+	-o-border-radius:      1.2em;
+	border-radius:         1.2em;
+}
+
+.ggv-tablet .x-tabbar .x-button.x-button-plain {
+	height:2.8em;
+}
+
+.ggv-tablet .x-tabbar .x-button .x-button-icon {
+	margin-top: 15px;
+}
+
+
+.ggv-tablet .x-tabbar .x-button .x-button-icon:before,
+.ggv-tablet .x-toolbar .x-button .x-button-icon:before {
+        font-size:   1.2em;
+        line-height: 1.1em;
+}
+
+.ggv-phone .x-button-ggv {
+	min-width:    100px;
+	height:        1.5em;
+	border-radius: .75em;
+
+    .x-toolbar .x-button .x-button-icon:before {
+        font-size:   1.2em;
+        line-height: 1.2em;
+    }
+}
+
+.ggv-phone .x-segmentedbutton {
+    .x-button {
+        margin:                 0;
+        -webkit-border-radius:  0;
+        border-radius:          0;
+    }
+
+    .x-button.x-first {
+        -webkit-border-top-left-radius:     0.9em;
+        border-top-left-radius:             0.9em;
+        -webkit-border-bottom-left-radius:  0.9em;
+        border-bottom-left-radius:          0.9em;
+    }
+
+    .x-button.x-last {
+        -webkit-border-top-right-radius:    0.9em;
+        border-top-right-radius:            0.9em;
+        -webkit-border-bottom-right-radius: 0.9em;
+        border-bottom-right-radius:         0.9em;
+    }
+
+    .x-button:not(:first-child) {
+        border-left: 0;
+    }
+}
+
+.ggv-tablet .x-segmentedbutton {
+    .x-button.x-button-pressed {
+	    background-color: #565 !important;
+    }
+
+    .x-button {
+        background-color:                   #343 !important;
+        background-image:                   none;
+        margin:                             0;
+        -webkit-border-radius:              0;
+        border-radius:                      0;
+	}
+
+    .x-button.x-first {
+        -webkit-border-top-left-radius:     1.2em;
+        border-top-left-radius:             1.2em;
+        -webkit-border-bottom-left-radius:  1.2em;
+        border-bottom-left-radius:          1.2em;
+    }
+
+    .x-button.x-last {
+        -webkit-border-top-right-radius:    1.2em;
+        border-top-right-radius:            1.2em;
+        -webkit-border-bottom-right-radius: 1.2em;
+        border-bottom-right-radius:         1.2em;
+    }
+
+    .x-button:not(:first-child) {
+        border-left:                         0;
+    }
+}

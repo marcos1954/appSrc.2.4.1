@@ -1,0 +1,146 @@
+
+.ggv-tablet {
+	.ggv-el-logo {
+		width: 90px; float: left; padding-right: 20px;
+		img {
+		    width: 70px; /* you can use % */
+		    height: auto;
+		}
+	}
+
+	.narrow .ggv-el-logo {
+	    width: 65px; float: left; padding-right: 20px;
+	    img {
+		width: 45px; /* you can use % */
+		height: auto;
+	    }
+	}
+
+	.ggv-el-name {
+	    width: 250px;
+	    float: left;
+	    margin-left: 0px;
+	    padding-right: 10px;
+	}
+
+	.narrow .ggv-el-name {
+	    width: 150px;
+	    float: left;
+	    margin-left: 0px;
+	    padding-right: 10px;
+	}
+
+	.ggv-el-desc {
+	    margin-left: 430px;
+	}
+
+	.narrow .ggv-el-desc {
+	    margin-left: 300px;
+	}
+
+	.ggv-events-list  {
+	    span.ggv-event-list-eventname {
+		font-size: 1.3em;
+		font-weight: bold;
+	    }
+	    span.ggv-event-list-name {
+		font-size: 1.0em;
+		font-weight: 500;
+		//color: #d00011;
+		color: #999;
+	    }
+	    span.ggv-event-list-cat-name {
+		font-size: 0.85em;
+		font-weight: 300;
+		color: #999;
+	    }
+	    span.ggv-event-list-loc {
+		font-size: 0.8em;
+		font-weight: normal;
+		color: #999;
+	    }
+	    span.ggv-event-list-times {
+		font-size: 0.9em;
+		font-weight: 300;
+		color: #666;
+	    }
+	}
+
+	.ggv-events-detail {
+		.desc {
+			font-size: 1.3em;
+		}
+		.infobox {
+			margin-left: 120px;
+			font-size: 1.3em;
+		}
+
+	}
+
+	.ggv-events-list.narrow  {
+	    span.ggv-event-list-eventname {
+		font-size: 1.0em;
+		font-weight: bold;
+	    }
+	    span.ggv-event-list-name {
+		font-size: 0.8em;
+		font-weight: 400;
+		//color: #d00011;
+		color: #999;
+	    }
+	    span.ggv-event-list-cat-name {
+		font-size: 0.75em;
+		font-weight: 300;
+		color: #999;
+	    }
+	    span.ggv-event-list-loc {
+		font-size: 0.7em;
+		font-weight: normal;
+		color: #999;
+	    }
+	    span.ggv-event-list-times {
+		font-size: 0.8em;
+		font-weight: 300;
+		color: #666;
+	    }
+	}
+	
+	.ggv-events-list.x-list-round.x-list {
+		.x-scroll-container {
+			.x-list-item.x-list-item-tpl .x-innerhtml {
+				padding-right: 50px;
+			}
+		}
+	}
+}
+
+.ggv-phone	.ggv-events-list  {
+    span.ggv-event-list-eventname {
+        font-size: 1.0em;
+        font-weight: bold;
+    }
+    span.ggv-event-list-name {
+        font-size: .8em;
+        font-weight: 400;
+        color: #a00011;
+    }
+    span.ggv-event-list-loc {
+        font-size: .75em;
+        font-weight: normal;
+        color: gray;
+    }
+    span.ggv-event-list-times {
+        font-size: .75em;
+        font-weight: bold;
+        color: green;
+    }
+    div.ggv-event-list-desc {
+        font-size: 0.8em;
+        font-weight: 100;
+        line-height: normal !important;
+    }
+    div.infobox {
+			margin-left: 120px;
+			
+		}
+}

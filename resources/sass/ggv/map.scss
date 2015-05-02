@@ -1,0 +1,97 @@
+
+
+/*--------------------------------- infowindow gmap ----------------------------*/
+/** moreinfo button */
+.ggvbutton {
+	background-color: #666666;
+	background-image: -webkit-linear-gradient(bottom, #aaaaaa 44%, #dddddd 94%);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.44, #aaaaaa),
+		color-stop(0.94, #dddddd)
+	);
+	height: 20px;
+	width: 190px;
+	border-width: 1px;
+	border-style:  solid;
+	border-color: #666666;
+	margin: 0px auto 0px auto;
+	
+	-ms-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	border-radius: 10px;
+	padding: 6px 0px 9px 12px;
+	text-align: center;
+	color: #fff;
+	font-size:1.5em;
+}
+
+.ggvbutton.ggv-button-active {
+	background-color: #ff6666;
+	background-image: -webkit-linear-gradient(bottom, #666666 1%, #9f8888 94%);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.01, #666666)
+		color-stop(0.94, #9f8888)
+	);
+}
+
+.ggvmap.x-button {
+    margin: 3px;
+    background-color: #222;
+    background-image: -webkit-linear-gradient(bottom, #222 21%, #444 94%);
+    border: 1px solid #555;
+    border-top-color: #444;
+    
+    .x-button-icon {
+        width: 1.5em;
+        height: 2.0em;
+    }
+    
+    .x-button-label {
+        text-align: left;
+        color: #fff;
+        font-size: 80%;
+    }
+}
+
+.ggvmap.x-button.active {
+    background-color: #aa6;
+    border: 1px solid #999999;
+    border-top-color: #a6a6a6;
+    background-image: -webkit-linear-gradient(bottom, #aaa 51%, #eee 94%);
+    .x-button-label {
+        text-align: left;
+        color: #33a;
+    }
+}
+
+
+.ggv-mapa {
+	background: black;
+}
+
+.sidebar.nolabels .ggvmap.x-button .x-button-label {
+    display: none;
+}
+
+
+/**** current location icon ****/
+img[src*="blue_dot_circle.png"] {
+    -webkit-animation-name: pulse;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes pulse {
+    0%  {  opacity: 1.0;   -webkit-transform: scale(1.05); }
+    40% {  opacity: 0.25;  -webkit-transform: scale(0.85); }
+    100%{  opacity: 1.0;   -webkit-transform: scale(1.05); }
+}

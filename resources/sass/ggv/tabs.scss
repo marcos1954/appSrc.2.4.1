@@ -1,0 +1,34 @@
+.x-tabbar-dark.x-docked-top {
+	.x-tab {
+		background-color: #343;
+		background-image: none;
+		color: #ffffff;
+		margin-left: .2em;
+		margin-right: .2em;
+	}		
+	.x-tab.ggv-empty {
+		background-color: #434;
+		color: #aaaaaa;
+		margin-left: .2em;
+		margin-right: .2em;
+	}
+	.x-tab-active {
+		background-color: #565;
+		background-image: none;
+		color: yellow;
+	}
+	.x-tab-active.ggv-empty {
+		background-color: #656;
+	}
+}
+
+.x-tabbar.x-docked-top {
+  height: 3em;
+  padding: 0 .8em;
+  background-color: black;
+  background-image: none;
+}
+
+.ggv-phone .x-tabbar.x-docked-top {
+  height: 2.4em;
+}

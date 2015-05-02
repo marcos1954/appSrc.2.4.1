@@ -1,0 +1,271 @@
+{
+    "navlist": {
+        "title": {
+			"placesmenu"  : "Gay PVR",
+            "browselist"  : "Explore",
+            "fullcatlist" : "Categorized List",
+            "alphalist"   : "Alphabetized List",
+			"catList"     : "Categories",
+            "singleday"   : "All in a Day",
+            "map"         : "Gay PV Map",
+            "settings"    : "Settings",
+            "myfavorites" : "My Favorites",
+            "mynotes"     : "My Notes",
+			"recents"     : "Recently Viewed",
+            "gallery"     : "Gallery"
+        },
+        "group" :  {
+            "directory" : "Directory",
+            "calendar"  : "Calendar",
+            "map"       : "Map",
+            "settings"  : "Settings",
+            "favorites" : "My Gay PV",
+            "gallery"   : "Pictures"
+        }
+    },
+	
+    "nav" : {
+        "button" : {
+            "back"      : "Back",
+            "back2main" : "PVR Directory",
+            "back2map"  : "PVR Map",
+            "favorites" : "Favorites List"
+        },
+        "tab" : {
+            "places"    :  "places",
+            "today"     :  "today",
+            "map"       :  "map",
+            "favs"       :  "favorites",
+            "settings"  :  "settings"
+        },
+        "msg" : {
+            "toplist"   : "Top of List",
+            "endlist"   : "End of List"
+        }
+    },
+	
+    "buttons" : {
+        "cancel" : "Cancel",
+        "save"   : "Save",
+        "done"   : "Done",
+        "more"   : "more info",
+		"no"     : "No",
+		"yes"    : "Yes",
+		"clear"  : "Clear"
+    },
+	
+    "places" : {
+        "title" : "Gay PVR Directory",
+        "menu" : {
+            "title" : "Gay PVR Directory"
+        },
+        "tab" : {
+            "info"   : "Info",
+            "photos" : "Photos",
+            "events" : "Events",
+            "menu"   : "Menu",
+            "map"    : "Map"
+        },
+        "categories": {
+            "daylife" : {
+                "menuName" : "Daylife",
+                "auxText"  : "Activities, Day Tours, Attractions, Points of Interest"
+            },
+            "nightlife" : {
+                "menuName" : "Nightlife",
+                "auxText"  : "Bars, Clubs, Discos, Lounges, and Night Tours"
+            },
+            "shows" : {
+                "menuName" : "Shows",
+                "auxText"  : "Comedy Performaces, Musicals, Plays and more"
+            
+            },
+            
+            
+            "restaurants" : {
+                "menuName" : "Restaurants",
+                "auxText"  : "From Fine Dining to Taco Stands"
+            },
+            "gymspa" : {
+                "menuName" : "Gym and Spa",
+                "auxText"  : "Spa Services, Massage, Gym, Health Clubs"
+            },
+            "galleries" : {
+                "menuName" : "Galleries",
+                "auxText"  : "Contemporary, Indiginous and Traditional Art Galleries"
+            },
+            "shopping" : {
+                "menuName" : "Shopping",
+                "auxText"  : "Furniture, Clothing, Sunglasses, Beach and Intimate Wear"
+            },
+            "lodging" : {
+                "menuName" : "Lodging",
+                "auxText"  : "Gay Vallarta's GLBT Hotels, Resorts and B&Bs"
+            },
+            "realestate" : {
+                "menuName" : "Real Estate",
+                "auxText"  : "Puerto Vallarta's Realtors"
+            },
+            "services" : {
+                "menuName" : "Services",
+                "auxText"  : "Event Organizers, Concierge, Medical, Translation, Graphic Design"
+            },
+            "all" : {
+                "menuName" : "Show All Categories",
+                "auxText"  : "Full Categorized List"
+            },
+            "alpha" : {
+                "menuName" : "Alphabetized List",
+                "auxText"  : "Full Alphabetized List of Businesses"
+            }
+        }
+    },
+	
+    "events" : {
+        "button" : {
+            "events"   : "Events",
+            "tours"    : "Tours",
+            "meetings" : "Meetings",
+            "promos"   : "Promos",
+            "all"      : "  All  "
+        },
+        "tab" : {
+            "info" : "Info",
+             "map" : "Map"
+        }
+    },
+	
+    "settings" : {
+        "title" : "Settings",
+
+		"textsize": {
+			"fieldlabel"   : "Font Size",
+			"title"        : "Adjust Text Font Size"
+		},
+        "gps"   : {
+            "title"        : "My Location on Map",
+            "enable"       : "Show My Location",
+            "directions"   : "Show Walking Path to Places",
+            "instructions" : ""
+        },
+        "notes" : {
+            "fieldlabel"   : "Show Notes in Listings",
+            "title" : "My Notes"
+        },
+        "lang"  : {
+            "title"   : "Select Language",
+            "english" : "English",
+            "spanish" : "Spanish",
+            "french"  : "French"
+        }
+    },
+	
+    "mapa": {
+        "button" : {
+            "pvr"       : "PVR",
+            "gaypvr"    : "Gay PVR",
+            "olasaltas" : "Olas Altas",
+            "cardenas"  : "Cardenas"
+        },
+        "settings" : {
+            "title"        : "Markers",
+            "favs"         : "favorites",
+            "atms"         : "atms",
+            "bars"         : "bars",
+            "restaurants"  : "restaurants",
+            "hotels"       : "hotels",
+            "gyms"         : "gyms",
+            "shopping"     : "shopping",
+            "tours"        : "tours",
+            
+            
+            "tourdesk"     : "concierge",
+            "org"          : "organizations",
+            "re"           : "realtors",
+            "events"       : "events",
+            "beaches"      : "beach clubs",
+            "gallery"      : "gallery",
+            "cafe"         : "coffee",
+            "spa"          : "spas",
+            
+            "other"        : "others",
+            "instructions" : "just do it"
+        },
+		"choices" : {
+			"panto" : "zoom map to area",
+			"chgmarkers" : "change categories showing"
+		}
+    },
+	
+    "gallery" : {
+        "toolbar" : {
+            "title"     : "Gallery",
+            "album"     : "Gallery Album: ",
+            "albums"    : "Gallery Albums",
+            "moreinfo"  : "more info"
+        },
+        "group" : {
+            "albums"    : "Photo Albums",
+            "favs"      : "Favorited Businesses",
+            "biz"       : "Business Categories"
+        }
+    },
+	
+	"browse" : {
+		"button" : {
+			"overview"   : "overview",
+			"categories" : "categories",
+			"characteristics" : "characteristics",
+			"cuisines"  : "cuisines",
+			"nearby"    : "nearby"
+		}
+	},
+	
+    "misc" : {
+		"nothingOnFile" : "Nothing on File!",
+        "bottomTitle"   : "Bottom Toolbar",
+        "loadLocaleMsg" : "Loading...",
+		"mapnolocation" : "no location info",
+        "Phone"         : "Phone: ",
+        "Calendar"      : "Calendar",
+        "noEventsMsg"   : "No events for this day.",
+        "favorites"     : "Favorites",
+		"recently"      : "Recently Viewed",
+		
+        "noFavsYet"     : "No Favorites Yet!",
+        "noFavsYetText" : "Select your favorites at any time you are looking at a listing by pressing the star in the upper right hand corner.",
+
+        "noNotesYet"     : "No Notes Yet!",
+        "noNotesYetText" : "Add your notes at any time you are looking at a listing by pressing the notes icon in the upper right hand corner."
+    },
+	
+    "trans" : {
+        "Calendar"      : "Calendar",
+        "Phone"         : "Phone: ",
+        "noEventsMsg"   : "No events to display",
+        "SorryNoImagesFor" : "Sorry, No Images for "
+    },
+	
+	"cuisine": {
+		"title" : "Choose Cuisines",
+		"button": {
+			"clear" : "Clear",
+			"checkall": "Check All"
+		}
+	},
+
+    "months" : {
+        "1"  : "January",
+        "2"  : "February",
+        "3"  : "March",
+        "4"  : "April",
+        "5"  : "May",
+        "6"  : "June",
+        "7"  : "July",
+        "8"  : "August",
+        "9"  : "September",
+        "10" : "October",
+        "11" : "November",
+        "12" : "December"
+    }
+}

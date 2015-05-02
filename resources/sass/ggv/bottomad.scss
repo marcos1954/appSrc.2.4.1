@@ -1,0 +1,87 @@
+.ggv-bottom-ad {
+	padding:          .2em;
+	background-color: #610;
+	background-image: none;
+	z-index:          20;
+	color:            #fff;
+	div.x-inner.x-sheet-inner {
+		border:      1px solid yellow;
+		border-radius: 5px;
+		padding:     .2em;
+		overflow:    hidden;
+
+		div.x-innerhtml {
+			color:       #fff;
+			font-size:   1.4em;
+			padding:     3px 3px 3px 3px;
+		}
+	}
+	.ggv-el-logo {
+		padding-top: 10px;
+		width: 60px; float: left; padding-right: 20px;
+		img {
+		    width: 50px; /* you can use % */
+		    height: auto;
+		    background-color: #ddd;
+		}
+	}
+
+	div {
+		padding: 0;
+		margin: 0;
+	}
+	.ggv-el-name {
+		font-size:   1.0em;
+	    width: 250px;
+	    float: left;
+	    margin-left: 0px;
+	    padding-right: 10px;
+	}
+
+	.ggv-el-desc {
+		font-size:   .8em;
+		margin-left: 430px;
+	}
+
+	.ggv-event-list-eventname {
+	    font-size: 1em;
+	    font-weight: 400;
+	}
+	.ggv-event-list-name {
+	    font-size: .7em;
+	    font-weight: 300;
+	    //color: #d00011;
+	    //color: #999;
+	}
+	.ggv-event-list-cat-name {
+	    font-size: 0.7em;
+	    font-weight: 200;
+	    //color: #999;
+	}
+	.ggv-event-list-times {
+	    font-size: 0.9em;
+	    font-weight: 300;
+	    //color: #666;
+	}
+
+}
+
+.ggv-bottom-ad.serif {
+	div.x-inner.x-sheet-inner {
+		div.x-innerhtml {
+			font-family: serif;
+		}
+	}
+}
+
+.ggv-bottom-ad {
+	.clockface {
+	    border:3px solid #fff;
+	}
+	.minhand {
+	    background: #fff;
+	}
+	.hourhand {
+	    background: #fff;
+	}
+}

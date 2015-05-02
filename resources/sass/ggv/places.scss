@@ -1,0 +1,433 @@
+.ggv-tablet {
+	.narrow {
+		.x-toolbar {
+			height: 2em;
+		}
+	}
+
+	.ggv-tl-star {	
+		width: 37px;
+		
+		position:relative;
+		top:-6px;
+		right: 18px;
+		float: right;
+		img {
+			width: 30px; /* you can use % */
+			height: auto;
+		}
+	}
+	
+	.ggv-pl-logo {
+		height: 100%;  width: 90px; float: left; padding-right: 20px;
+		img {
+			width: 70px; 
+			height: auto;
+		}
+	}
+
+	.narrow .ggv-pl-logo {
+		height: 100%;  width: 60px; float: left; padding-right: 10px;
+		img {
+			width: 45px;
+			height: auto;
+		}
+	}
+
+	.ggv-pl-name {
+		width: 250px;
+		float: left;
+		padding-right: 20px;
+	}
+
+	.narrow .ggv-pl-name {
+		width: 140px;
+		float: left;
+		padding-right: 10px;
+	}
+
+	.ggv-pl-desc {
+		margin-left: 390px;
+	}
+
+	.narrow .ggv-pl-desc {
+		margin-left: 250px;
+	}
+
+	.caution {
+		background-color: #aa0;
+		background-image: none;
+	}
+	.ggv-places-menu {
+		.aux {
+			font-size: 0.6em;
+			color: gray;
+			font-weight: 400;
+		}
+		.name {
+			font-size: 1.0em !important;
+			font-weight: bold;
+		}
+	}
+
+	.ggv-pl-name {
+		span.name {
+			font-size: 1.3em;
+			font-weight: 600;
+			color: #333340;
+		}
+		span.loc {
+			font-size: 0.9em;
+			font-weight: 300;
+			color: gray;
+		}
+		span.cat {
+			font-size: 1.0em;
+			font-weight: 500;
+			color: gray;
+		}
+	}
+
+	.narrow .ggv-pl-name {
+		span.name {
+			font-size: 1.0em;
+			font-weight: 600;
+			color: #333340;
+		}
+		span.loc {
+			font-size: 0.8em;
+			font-weight: 300;
+			color: gray;
+		}
+		span.cat {
+			font-size: 0.9em;
+			font-weight: 400;
+			color: gray;
+		}
+	}
+
+	.ggv-pl-star {
+		width: 37px;
+		padding-top: 5px;
+		float: left;
+		img {
+			width: 35px; /* you can use % */
+			height: auto;
+		}
+	}
+
+	.ggv-places-info.details {
+		font-size: 1.2em !important;
+
+		.photo {
+			float: left;
+			margin: 0 8px 16px 0;
+			border: 1px solid #ccc;
+		/*	-webkit-box-shadow: 0 2px 4px #777;*/
+		}
+
+		.x-html h3 {
+			margin-bottom: 5px;
+			font-size: 150%
+		}
+
+		.phone, .link {
+			clear: both;
+			font-weight: bold;
+			display: block;
+			text-align: center;
+			margin-top: 8px;
+			font-size: 90%;
+		}
+
+		.desc {
+			clear: both;
+			margin-top: 25px;
+			//font-size: 125% !important;
+		}
+	}
+
+	.ggv-events .details {
+		font-size: 1.2em !important;
+	}
+
+	.ggv-events .desc {
+		clear: both;
+		margin-top: 25px;
+		font-size: 125% !important;
+	}
+
+	.ggv-places-combo .details {
+		font-size: 1em !important;
+	}
+
+	.ggv-places-combo .desc {
+		clear: both;
+		margin-top: 25px;
+		font-size: 125% ;
+	}
+
+	.ggv-places-events .desc {
+		clear: both;
+		margin-top: 25px;
+		font-size: 100% ;
+	}
+	.ggv-placesevents-flyer {
+		float: left;
+	}
+	.ggv-placesevents-item {
+		//clear: both;
+		padding-left: 320px;
+		margin-top: 25px;
+		font-size: 125% ;
+	}
+	.ggv-plist {
+		background-color: #ccc;
+	}
+	
+	.ggv-clist  .x-list-item-tpl .x-innerhtml {
+		padding-right: 50px !important;
+		overflow: hidden;
+		white-space:nowrap;
+	}
+	.ggv-places-list.x-list.x-list-indexed {
+		.x-scroll-container {
+			margin-right: 30px !important;
+			.x-unsized.x-list-disclosure {
+				margin-right: 10px !important;
+			}
+			.x-list-item.x-list-item-tpl .x-innerhtml{
+				padding-right: 50px;
+			}
+		}
+	}
+	.ggv-places-list.x-list {
+		.x-scroll-container {
+			.x-list-item.x-list-item-tpl .x-innerhtml{
+				padding-right: 50px;
+			}
+		}
+	}
+}
+
+.ggv-phone {
+
+	.x-tabbar.x-docked-top {
+		padding-left: 0.3em;
+		padding-right: 0.3em;
+	}
+
+	.ggv-places-menu {
+		span.ggv-menu-places-name {
+			font-size: 1.1em !important;
+			font-weight: bold;
+		}
+		span.ggv-menu-places-aux {
+			font-size: .7em !important;
+		}
+	}
+/***************************/
+	.x-list-item-label {
+		span.ggv-places-list-name {
+			font-size: 1em;
+			font-weight: 600;
+			//color: #333340;
+		}
+		span.ggv-places-list-loc {
+			font-size: .7em;
+			font-weight: bold;
+			color: gray;
+		}
+	}
+
+	.x-list-normal.x-list.ggv-places-list .x-list-item.x-list-item-tpl .x-innerhtml div div,
+	.x-list-normal.x-list.ggv-places-list .x-list-item .x-dock-horizontal .x-innerhtml  div div {
+		padding-right: 10px;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+
+	.ggv-favorites-list,
+	.ggv-places-list {
+
+		.x-list-item .x-list-item-body,  .x-list-item.x-list-item-tpl .x-innerhtml {
+			padding-left: 5px;
+		}
+		div.ggv-fav-note,
+		div.ggv-fav-star {
+			display: none;
+			visibility: hidden;
+			font-family: ggvSymbols;
+			height: 20px;
+			width: 20px;
+			float: left;
+		}
+
+		span.ggv-places-list-name {
+			font-size: 1.0em;
+			font-weight: 600;
+			color: #333340;
+		}
+		div.ggv-item-inner {
+			margin-left: 0px;
+			padding-right: 20px;
+		}
+
+		.ggv-pl-item.notes {
+			div.ggv-item-inner {
+				margin-left: 23px;
+				padding-right: 20px;
+			}
+			span.ggv-places-list-name {
+				font-size: 1.0em;
+				font-weight: 700;
+				//color: #333340;
+/*				color: #900;*/
+			}
+			div.ggv-fav-note {
+				display: block;
+				visibility: visible;
+				font-family: ggvSymbols;
+				color: #900;
+				/*
+				background-color: green;
+				background-image: url('http://www.gayguidevallarta.com/images/star.png') !important;*/
+			}
+
+		}
+
+		.ggv-pl-item.favorite {
+
+			div.ggv-item-inner {
+				margin-left: 23px;
+				padding-right: 20px;
+			}
+			span.ggv-places-list-name {
+				font-size: 1.0em;
+				font-weight: 700;
+				//color: #333340;
+			/*	color: #900;*/
+			}
+			div.ggv-fav-star {
+				display:     block;
+				visibility:  visible;
+				font-family: ggvSymbols;
+				color: #900;
+				/*
+				background-color: green;
+				background-image: url('http://www.gayguidevallarta.com/images/star.png') !important;*/
+			}
+		}
+
+		span.ggv-places-list-loc {
+			font-size: 0.6em;
+			font-weight: 300;
+			color: gray;
+			position: relative;
+			top: -10px;
+			left: 10px;
+		}
+	}
+
+
+	.ggv-places-list {
+		span.ggv-places-list-name {
+			color: #000;
+		}
+		.ggv-pl-item.favorite,
+		.ggv-pl-item.notes,
+		.ggv-pl-item.notes.favorite  {
+			span.ggv-places-list-name {
+				color: #900 ;
+			}
+		}
+	}
+
+	.ggv-places-list.ggv-favorites-list {
+		span.ggv-places-list-name,
+		span.ggv-places-list-name.favorite,
+		span.ggv-places-list-name.notes {
+			color: #000 !important;
+		}
+		.ggv-pl-item.favorite.notes {
+			span.ggv-places-list-name {
+				color: #900 !important;
+			}
+		}
+	}
+	
+	.ggv-plist {
+		background-color: #ccc;
+	}
+	
+	.ggv-clist  .x-list-item-tpl .x-innerhtml {
+		padding-right: 50px !important;
+		overflow: hidden;
+		white-space:nowrap;
+	}
+	.ggv-places-list.x-list.x-list-indexed {
+		.x-scroll-container {
+			margin-right: 30px !important;
+			.x-unsized.x-list-disclosure {
+				margin-right: 10px !important;
+			}
+			.x-list-item.x-list-item-tpl .x-innerhtml{
+				padding-right: 50px;
+			}
+		}
+	}
+	.ggv-places-list.x-list {
+		.x-scroll-container {
+			.x-list-item.x-list-item-tpl .x-innerhtml{
+				padding-right: 50px;
+			}
+		}
+	}
+
+
+
+/***************************/
+	.ggv-places-info.details {
+
+		font-size: 1.0em;
+
+		.photo {
+			float: left;
+			margin: 0 8px 16px 0;
+			border: 1px solid #ccc;
+			/*-webkit-box-shadow: 0 2px 4px #777;*/
+		}
+		.x-html h3 {
+			margin-bottom: 5px;
+			font-size: 150%
+		}
+
+		.phone, .link {
+			clear: both;
+			font-weight: bold;
+			display: block;
+			text-align: center;
+			margin-top: 8px;
+			font-size: 90%;
+		}
+
+		.desc {
+			clear: both;
+			margin-top: 25px;
+			font-size: 114%;
+		}
+	}
+
+	.ggv-events,
+	.ggv-places-events {
+		.details {
+			font-size: 1.2em !important;
+		}
+		.desc {
+			clear: both;
+			margin-top: 25px;
+			font-size: 125% !important;
+		}
+	}
+}

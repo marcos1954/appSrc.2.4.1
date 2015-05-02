@@ -1,0 +1,181 @@
+$global-row-height:     2.3em;
+$top-tab-height:        3.5em;
+
+$base-gradient:         'matte';
+$base-color:            #881132;
+$active-color:          #646;
+$toolbar-base-color:    #111;
+$loading-spinner-color: #dd0;
+$tabs-dark:             darken(#881132, 20%);
+$list-pressed-color:    rgba(0,0,0,0);
+
+$include-bottom-tabs:   false;
+$include-highlights:    false;
+$include-default-icons: true;
+$include-pictos-font:   true;
+$include-list-highlights: false;
+
+@import 'sencha-touch/default';
+@import 'sencha-touch/default/all';
+
+@include icon-font('ggvSymbols', inline-font-files('ggvSymbols/ggvSymbols.woff', woff, 'ggvSymbols/ggvSymbols.ttf', truetype,'ggvSymbols/ggvSymbols.svg', svg));
+
+@include icon('list',        '!',  'ggvSymbols');
+@include icon('locate',      '*',  'ggvSymbols');
+@include icon('compose2',    '(',  'ggvSymbols');
+@include icon('settings',    'C',  'ggvSymbols');
+@include icon('star',        '5',  'ggvSymbols');
+@include icon('locate1',     '4',  'ggvSymbols');
+@include icon('arrow_up',    '0',  'ggvSymbols');
+@include icon('arrow_down',  '1',  'ggvSymbols');
+@include icon('arrow_right', '7',  'ggvSymbols');
+@include icon('arrow_left',  '6',  'ggvSymbols');
+@include icon('calendar',    '/',  'ggvSymbols');
+@include icon('next',        '\\', 'ggvSymbols');
+@include icon('last',        '&',  'ggvSymbols');
+@include icon('flag',        '-',  'ggvSymbols');
+@include icon('search',      'A',  'ggvSymbols');
+@include icon('zoom2',       'H',  'ggvSymbols');
+
+@import 'ggv/slidenavigation.scss';
+@import 'ggv/buttons.scss';
+@import 'ggv/list.scss';
+@import 'ggv/toolbar.scss';
+@import 'ggv/carousel.scss';
+@import 'ggv/tabs.scss';
+@import 'ggv/places.scss';
+@import 'ggv/clock.scss';
+@import 'ggv/events.scss';
+@import 'ggv/map.scss';
+@import 'ggv/gallery.scss';
+@import 'ggv/bottomad.scss';
+@import 'ggv/datepicker.scss';
+
+.x-mask .x-mask-inner {
+  background-color: rgba(180, 0, 0, 0.55) !important;
+  color: #dd0;
+}
+
+.x-scroll-indicator.rounded,
+.x-scroll-indicator.rounded > :nth-child(2),
+.x-scroll-indicator.rounded > * {
+  background: #888 none !important;
+  content: none;
+}
+
+/**
+ * @author Bruno Tavares
+ * @class Ext.ux.InstallApp
+ *
+ * Styles for the floating balloon extension.
+ */
+.x-installapp {
+    z-index: 999999;
+	width: 16em;
+	font-size: 0.8em;
+	padding: 0.5em;
+	text-align: left;
+	border: 1px solid #505050;
+	color: #333;
+	@include background(linear-gradient(#fff, #eee 2%, #ccc 98%, #a3a3a3));
+	@include border-radius(0.7em);
+	@include text-shadow(0 1px 0 rgba(255,255,255,0.75));
+	@include box-shadow(0 0 4px rgba(0, 0 ,0,0.5));
+
+	strong {
+	    font-weight: bold;
+	}
+
+	.arrow {
+		position: absolute;
+		background-image:-webkit-gradient(linear,0 0,100% 100%,color-stop(0,rgba(204,204,204,0)),color-stop(0.4,rgba(204,204,204,0)),color-stop(0.4,#ccc));
+		border-width: 0 1px 1px 0;
+		border-style:  solid;
+		border-color: #505050;
+		width:16px;
+		height:    16px;
+		-webkit-transform: rotateZ(45deg);
+		bottom:-9px; left:50%;
+		margin-left:-8px;
+		-webkit-box-shadow: inset -1px -1px 0 #a9a9a9;
+		-webkit-border-bottom-right-radius:2px;
+	}
+
+    .icon-plus {
+    	font-weight:bold;
+    	font-size:1.3em;
+    }
+
+    .icon-share {
+    	display:inline-block;
+    	width:18px;
+    	height:15px;
+    	background-repeat:no-repeat;
+    	background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAPCAQAAABDj1eZAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAUdJREFUKFNtkLtLw1AYxS/qJLhXVKr2ZRulUNtiqgSb3CziICI6ucTFVYcOnaQOFRwUnNTRwUWXgpP/QdHNUEQUHGxofYBTlRs83iZNjKTncOGe7/vx3QchXUWn6FL3jhfKUdCCr5zuifV5oDiHQM+c+CIhiiCSWNu08iq9oHXKLAiqrgR4UXqlOEYZt++ExEL0wW7+OW0G10muLv9gmqfe5FAWKmTMYQYiFL7PYwyLOD8lSjNh2gdnPzMII4QUBxc4OothbAF7GCBKQ0YbSWyPQsIhqvetS+y0ygGMo/KFZfviDvR4AhwgZU9dGYnA0J/6ndc15i3ouYIMcVVUcEXIoOxCeRCfwP8sXBSdjtpUv/1QW+K16kCCIUC4id9Fa0JtkluwVkSfqPL6RwfSDA0aNlx7k/bWgViB7bMS2/1vk5sdsZLN/ALSuL3tylO4RAAAAABJRU5ErkJggg==);
+    	background-size:18px 15px;
+    	text-indent:-9999em;
+    	overflow:hidden;
+    }
+}
+
+.x-phone .x-installapp {
+    left: 50%;
+    margin-left: -8em;
+}
+
+.x-tablet .x-installapp {
+    left: 55px;
+
+    .arrow {
+    	-webkit-transform: rotateZ(-135deg);
+	    background-image:-webkit-gradient(linear,0 0,100% 100%,color-stop(0,rgba(238,238,238,0)),color-stop(0.4,rgba(238,238,238,0)),color-stop(0.4,#eee));
+	    -webkit-box-shadow: inset -1px -1px 0 #fff;
+	    top:-9px; bottom:auto; left:50%;
+    }
+}
+
+.x-toggle {
+  margin-left: auto;
+}
+
+.ggv-author .x-innerhtml.x-html {
+	padding: 0.6em;
+}
+
+.ggv-author .x-innerhtml.x-html .ggv-author-inner {
+	width: 100%;
+	font-size: 10pt;
+	font-weight: 200;
+	padding: 1.0em;
+	border-radius: 0.5em;
+	border-color: rgb(221, 221, 221);
+	border-width: 1px;
+	border-style: solid;
+	background-color: white;	
+}
+
+.ggv-list-name {
+	padding-right: 30px;
+}
+
+.ggv-category-name {
+	margin-right: 60px;
+	font-size: 0.6em;
+	font-weight: 500;
+	padding-left: 1em;
+	color: gray;
+}
+
+#noneFound .x-html.x-innerhtml {
+	padding: .2em;
+}
+
+button#more_info_button.ggv-button-hidden {
+	display: none;
+}
+
+.textsizeslider .x-component-outer {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+

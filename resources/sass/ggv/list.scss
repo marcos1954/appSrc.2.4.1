@@ -1,0 +1,85 @@
+
+.x-list .x-list-disclosure:before {
+	position:    absolute;
+	top:         -1px;
+	right:       0;
+	bottom:      0;
+	left:        4px;
+	content:     '8';
+	font-family: 'ggvSymbols';
+	color:       #ddc;
+	font-size:   24px;
+	text-align:  center;
+	line-height: 35px;
+	text-shadow: 0 0 0;
+}
+
+.ggv-tablet {
+	//
+	// header grouping on lists sizes
+	//
+
+	.x-list-header {
+		padding: 0.3em 0 0.25em .5em;
+		font-size: .85em;
+		font-weight: 700;
+		color: /* rgb(94, 51, 94) */ black;
+	}
+	
+	
+	//
+	// list right side adjust to make room for disclose button
+	//
+	.x-list-normal .x-list-item.x-list-item-tpl,
+	.x-list-normal .x-list-item .x-dock-horizontal {
+		padding-right: 60px;
+	}
+}
+/*
+.x-list-round.x-list-grouped .x-list-footer-wrap.x-list-item-tpl.x-item-selected > .x-innerhtml,
+.x-list-round.x-list-grouped .x-list-footer-wrap.x-list-item.x-item-selected .x-dock-horizontal,
+.x-list .x-list-item.x-item-selected .x-dock-horizontal,
+.x-list .x-list-item.x-item-selected.x-list-item-tpl{
+		background-color: #ccc;
+		background-image: none;
+}
+*/
+
+.x-list.x-list-round.x-list-grouped .x-list-item.x-item-selected.x-list-item-tpl > .x-innerhtml,
+.x-list.x-list-round.x-list-ungrouped .x-list-item.x-item-selected.x-list-item-tpl > .x-innerhtml,
+
+.x-list .x-list-item.x-item-selected .x-dock-horizontal,
+.x-list .x-list-item.x-item-selected.x-list-item-tpl {
+	background-color: #ccc;
+	background-image: none;
+	color: white;
+}
+
+.x-list.x-list-round.x-list-grouped .x-list-footer-wrap.x-list-item.x-item-selected.x-list-item-tpl {
+	background-color: transparent;
+	background-image: none;
+}
+
+.x-list-round .x-indexbar-vertical {
+    margin-right: 8px;
+}
+
+.x-list-round {
+	.x-list-item.x-list-item-first {
+		border-top-right-radius: 0.4em;
+		border-top-left-radius: 0.4em;
+		border-bottom: none;
+	}
+	
+	.x-list-item {
+		background-color: rgb(255,255,255);
+		border: 1px solid rgb(222,222,222);
+		border-bottom: none;
+	}
+	
+	.x-list-item.x-list-item-last {
+		border-bottom-right-radius: 0.4em;
+		border-bottom-left-radius: 0.4em;
+		border-bottom: 1px solid rgb(222,222,222);
+	}
+}

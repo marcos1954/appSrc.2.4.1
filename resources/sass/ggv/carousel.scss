@@ -1,0 +1,16 @@
+
+
+
+.x-carousel.blackback {
+	background-color: #444; 
+}
+
+.x-carousel-indicator-dark span {
+	background-image: none;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.x-carousel-indicator-dark span.x-carousel-indicator-active {
+	background-image: none;
+	background-color: rgba(255, 100, 100, 1.0);
+}

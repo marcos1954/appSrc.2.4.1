@@ -1,0 +1,49 @@
+   
+.ggv-phone .x-segmentedbutton {
+    .x-button {
+      margin: 0;
+      -webkit-border-radius: 0;
+      border-radius: 0; }
+    .x-button.x-first {
+      -webkit-border-top-left-radius: 0.9em;
+      border-top-left-radius: 0.9em;
+      -webkit-border-bottom-left-radius: 0.9em;
+      border-bottom-left-radius: 0.9em; }
+    .x-button.x-last {
+      -webkit-border-top-right-radius: 0.9em;
+      border-top-right-radius: 0.9em;
+      -webkit-border-bottom-right-radius: 0.9em;
+      border-bottom-right-radius: 0.9em; }
+    .x-button:not(:first-child) {
+      border-left: 0; }
+}
+
+.ggv-tablet .x-segmentedbutton {
+	.x-button.x-button-pressed {
+		background-color: #388A4E !important;
+	}
+    .x-button {
+		border-width: 2px;
+		border-color: black;
+	  background-color: #060 !important;
+	  background-image: none;
+	  border-width: 1px;
+      margin: 0;
+      -webkit-border-radius: 0;
+      border-radius: 0;
+	  height:  34px;
+	  border-radius: 17px;
+	}
+    .x-button.x-first {
+      -webkit-border-top-left-radius: 1.2em;
+      border-top-left-radius: 1.2em;
+      -webkit-border-bottom-left-radius: 1.2em;
+      border-bottom-left-radius: 1.2em; }
+    .x-button.x-last {
+      -webkit-border-top-right-radius: 1.2em;
+      border-top-right-radius: 1.2em;
+      -webkit-border-bottom-right-radius: 1.2em;
+      border-bottom-right-radius: 1.2em; }
+     .x-button:not(:first-child) {
+      border-left: 0; }
+}

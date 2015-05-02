@@ -1,0 +1,56 @@
+.clock {
+    display: block;
+    width: 41px;
+    height: 90px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    padding: 0px;
+    position:relative;
+    text-align: center;
+}
+
+.clockhighlight1 {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 0 auto;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+   
+}
+
+.clockface {
+    display: block;
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    border:3px solid #8e8e8e;
+}
+
+.minhand {
+    position: absolute;
+    width: 3px;
+    height: 16px;
+    top:4px;
+    left: 19px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    background: #8e8e8e;
+    -webkit-transform-origin: 50% 16px;
+}
+
+.hourhand {
+    position: absolute;
+    width: 3px; 
+    height: 10px;
+    top: 10px;
+    left: 19px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    background: #8e8080;
+    -webkit-transform-origin: 50% 10px;
+}
