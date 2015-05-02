@@ -406,7 +406,7 @@ return;
 }
 
 function ggv_vsnDate() {
-	return  "V3.2.0<br />Build Version: master<br />Date: 2015-01-19 18:00:00 ";
+	return  "V4.1.1<br />Build Version: master<br />Date: 2015-05-02 development ";
 }
 
 console.log('lang.js')

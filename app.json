@@ -1,4 +1,23 @@
 {
+    "builds": {
+        "web": {"default": true},
+        "native": {
+            "packager": "cordova",
+            "cordova" : {
+                "config": {
+                    // Uncomment the line below and add the platforms you wish to build for
+                    //"platforms": "ios android",
+
+                    // Name and ID properties are only used during app creation
+                    // edit this if you are recreating your cordova app
+                    //"id": "com.domain.GayGuideApp",
+                    //"name": "GayGuideApp"
+                }
+            }
+        }
+    },
+
+                
     /**
      * The application's namespace, used by Sencha Command to generate classes
      */
@@ -39,10 +58,6 @@
      *      }
      */
     "js": [
-		{
-			"path": "cordova.js",
-			"remote": true
-		},
         {
             "path": "touch/sencha-touch.js",
             "x-bootstrap": true

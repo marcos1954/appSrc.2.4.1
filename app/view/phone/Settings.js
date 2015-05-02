@@ -284,7 +284,7 @@ Ext.define('GayGuideApp.view.phone.Settings', {
             width:  '100%',
             cls:    'ggv-author',
             html:   '<div class="ggv-author-inner"><center>App by Mark Alan Page<br />Vallarta APP Forge<br />'+
-                    '<br />GayGuideApp<br />&copy; 2011-2014 Gay Guide Vallarta<br /><br />'+
+                    '<br />GayGuideApp<br />&copy; 2011-2015 Gay Guide Vallarta<br /><br />'+
                     ggv_vsnDate()+
                     '</center></div>'
         }],
