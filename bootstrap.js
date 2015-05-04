@@ -746,6 +746,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "GayGuideApp.view.phone.PlacesDetailContainer": [],
   "GayGuideApp.view.phone.PlacesListPhone": [],
   "GayGuideApp.view.phone.PlacesMenu": [],
+  "GayGuideApp.view.phone.PlacesPixMenu": [],
   "GayGuideApp.view.phone.RecentsListPhone": [],
   "GayGuideApp.view.phone.Settings": [],
   "GayGuideApp.view.tablet.BrowseTablet": [],
@@ -771,12 +772,6 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ux.datepicker.DatePicker": [],
   "Ux.homescreen.HomeScreen": [],
   "Ux.locale.Manager": [],
-  "Ux.locale.override.extjs.Button": [],
-  "Ux.locale.override.extjs.Component": [],
-  "Ux.locale.override.extjs.FieldContainer": [],
-  "Ux.locale.override.extjs.MenuItem": [],
-  "Ux.locale.override.extjs.Panel": [],
-  "Ux.locale.override.extjs.Text": [],
   "Ux.locale.override.st.Button": [],
   "Ux.locale.override.st.Component": [],
   "Ux.locale.override.st.Container": [],
@@ -1683,6 +1678,9 @@ Ext.ClassManager.addNameAliasMappings({
   "GayGuideApp.view.phone.PlacesMenu": [
     "widget.placesmenuphone"
   ],
+  "GayGuideApp.view.phone.PlacesPixMenu": [
+    "widget.placespixmenuphone"
+  ],
   "GayGuideApp.view.phone.RecentsListPhone": [
     "widget.recentslistphone"
   ],
@@ -1758,12 +1756,6 @@ Ext.ClassManager.addNameAliasMappings({
     "widget.installapp"
   ],
   "Ux.locale.Manager": [],
-  "Ux.locale.override.extjs.Button": [],
-  "Ux.locale.override.extjs.Component": [],
-  "Ux.locale.override.extjs.FieldContainer": [],
-  "Ux.locale.override.extjs.MenuItem": [],
-  "Ux.locale.override.extjs.Panel": [],
-  "Ux.locale.override.extjs.Text": [],
   "Ux.locale.override.st.Button": [],
   "Ux.locale.override.st.Component": [],
   "Ux.locale.override.st.Container": [],

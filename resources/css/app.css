@@ -9254,13 +9254,30 @@ img[src*="blue_dot_circle.png"] {
   text-shadow: white 1px 1px 1px;
 }
 
-/* line 54, ../sass/app.scss */
+/* line 1, ../sass/ggv/pixmenu.scss */
+.x-img-background .x-innerhtml.ggv-pixmenu-text {
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  color: white;
+  font-size: 200%;
+  text-align: left;
+  background-color: rgba(100, 100, 100, 0.4);
+  padding: 5px 10px 5px 25px;
+}
+
+/* line 13, ../sass/ggv/pixmenu.scss */
+.ggv-pixmenu-carousel {
+  background-color: black;
+}
+
+/* line 56, ../sass/app.scss */
 .x-mask .x-mask-inner {
   background-color: rgba(180, 0, 0, 0.55) !important;
   color: #dd0;
 }
 
-/* line 61, ../sass/app.scss */
+/* line 63, ../sass/app.scss */
 .x-scroll-indicator.rounded,
 .x-scroll-indicator.rounded > :nth-child(2),
 .x-scroll-indicator.rounded > * {
@@ -9274,7 +9291,7 @@ img[src*="blue_dot_circle.png"] {
  *
  * Styles for the floating balloon extension.
  */
-/* line 72, ../sass/app.scss */
+/* line 74, ../sass/app.scss */
 .x-installapp {
   z-index: 999999;
   width: 16em;
@@ -9298,11 +9315,11 @@ img[src*="blue_dot_circle.png"] {
   -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 }
-/* line 85, ../sass/app.scss */
+/* line 87, ../sass/app.scss */
 .x-installapp strong {
   font-weight: bold;
 }
-/* line 89, ../sass/app.scss */
+/* line 91, ../sass/app.scss */
 .x-installapp .arrow {
   position: absolute;
   background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0, rgba(204, 204, 204, 0)), color-stop(0.4, rgba(204, 204, 204, 0)), color-stop(0.4, #cccccc));
@@ -9318,12 +9335,12 @@ img[src*="blue_dot_circle.png"] {
   -webkit-box-shadow: inset -1px -1px 0 #a9a9a9;
   -webkit-border-bottom-right-radius: 2px;
 }
-/* line 104, ../sass/app.scss */
+/* line 106, ../sass/app.scss */
 .x-installapp .icon-plus {
   font-weight: bold;
   font-size: 1.3em;
 }
-/* line 109, ../sass/app.scss */
+/* line 111, ../sass/app.scss */
 .x-installapp .icon-share {
   display: inline-block;
   width: 18px;
@@ -9335,17 +9352,17 @@ img[src*="blue_dot_circle.png"] {
   overflow: hidden;
 }
 
-/* line 121, ../sass/app.scss */
+/* line 123, ../sass/app.scss */
 .x-phone .x-installapp {
   left: 50%;
   margin-left: -8em;
 }
 
-/* line 126, ../sass/app.scss */
+/* line 128, ../sass/app.scss */
 .x-tablet .x-installapp {
   left: 55px;
 }
-/* line 129, ../sass/app.scss */
+/* line 131, ../sass/app.scss */
 .x-tablet .x-installapp .arrow {
   -webkit-transform: rotateZ(-135deg);
   background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0, rgba(238, 238, 238, 0)), color-stop(0.4, rgba(238, 238, 238, 0)), color-stop(0.4, #eeeeee));
@@ -9355,17 +9372,17 @@ img[src*="blue_dot_circle.png"] {
   left: 50%;
 }
 
-/* line 137, ../sass/app.scss */
+/* line 139, ../sass/app.scss */
 .x-toggle {
   margin-left: auto;
 }
 
-/* line 141, ../sass/app.scss */
+/* line 143, ../sass/app.scss */
 .ggv-author .x-innerhtml.x-html {
   padding: 0.6em;
 }
 
-/* line 145, ../sass/app.scss */
+/* line 147, ../sass/app.scss */
 .ggv-author .x-innerhtml.x-html .ggv-author-inner {
   width: 100%;
   font-size: 10pt;
@@ -9378,12 +9395,12 @@ img[src*="blue_dot_circle.png"] {
   background-color: white;
 }
 
-/* line 157, ../sass/app.scss */
+/* line 159, ../sass/app.scss */
 .ggv-list-name {
   padding-right: 30px;
 }
 
-/* line 161, ../sass/app.scss */
+/* line 163, ../sass/app.scss */
 .ggv-category-name {
   margin-right: 60px;
   font-size: 0.6em;
@@ -9392,17 +9409,17 @@ img[src*="blue_dot_circle.png"] {
   color: gray;
 }
 
-/* line 169, ../sass/app.scss */
+/* line 171, ../sass/app.scss */
 #noneFound .x-html.x-innerhtml {
   padding: .2em;
 }
 
-/* line 173, ../sass/app.scss */
+/* line 175, ../sass/app.scss */
 button#more_info_button.ggv-button-hidden {
   display: none;
 }
 
-/* line 177, ../sass/app.scss */
+/* line 179, ../sass/app.scss */
 .textsizeslider .x-component-outer {
   padding-top: 1em;
   padding-bottom: 1em;

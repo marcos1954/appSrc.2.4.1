@@ -115,6 +115,10 @@ Ext.application({
         'BottomAd',
         'phone.PhoneStatusBar',
         'phone.PlacesMenu',
+        'phone.PlacesPixMenu',
+
+        
+        
         'phone.PlacesDetailContainer',
         'phone.EventsDetailContainer',
         'phone.DetailPhone',

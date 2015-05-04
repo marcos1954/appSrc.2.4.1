@@ -521,7 +521,7 @@ Ext.define("GayGuideApp.controller.MainController", {
         if (!GayGuideApp.isNative()) {
             Ux.homescreen.HomeScreen.init();
         }
-        GayGuideApp.app.getApplication().redirectTo('placesmenu', true);
+        //GayGuideApp.app.getApplication().redirectTo('placesmenu', true);
 
         // create the stores, loads data from server
         //
@@ -555,6 +555,11 @@ Ext.define("GayGuideApp.controller.MainController", {
 
         GayGuideApp.ggv.loadMask.setMessage(Ux.locale.Manager.get("misc.loadLocaleMsg", "Loading ..."));
         Ext.Viewport.setMasked(GayGuideApp.ggv.loadMask);
+        
+        
+        GayGuideApp.cards.placesPixMenu.destroy();
+        GayGuideApp.cards.placesPixMenu = null;
+
         ///////////////////////////////////////////////////////////////
         GayGuideApp.ggv.clearMapMarkers(GayGuideApp.cards.MarkerMap);
         ///////////////////////////////////////////////////////////////
