@@ -21,16 +21,10 @@ Ext.define("GayGuideApp.controller.CalendarController", {
         refs: {},
         
         control: {}
-        
     },
     
     /*
      * addCalendarEntry - add calendar entry to native calendar
-     *
-     *
-     *
-     *
-     *
      *
      *
      */
@@ -47,16 +41,5 @@ Ext.define("GayGuideApp.controller.CalendarController", {
             end,
             notes = record.data.descEvent,
             date = GayGuideApp.ggv.today;
-            
-        
-            
-        
-        
-        
-        
-        
-
-        
-    },
-    
+    }
 });

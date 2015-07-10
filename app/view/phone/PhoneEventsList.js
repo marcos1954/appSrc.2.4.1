@@ -20,8 +20,7 @@ Ext.define("GayGuideApp.view.phone.PhoneEventsList", {
 
             defaults: {
                 xtype:            'button',
-                ui:               'ggv-round',
-                //height:           '1.8em'
+                ui:               'ggv-round'
             },
 
             items: [{

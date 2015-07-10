@@ -61,6 +61,9 @@
         "menu" : {
             "title"  : "Directorio de PVR Gay"
         },
+		"pixmenu" : {
+			"title" : "Vallarta Gay"
+		},
         "tab" : {
             "info"   : "Info",
             "photos" : "Fotos",

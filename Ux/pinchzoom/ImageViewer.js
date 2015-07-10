@@ -91,7 +91,7 @@ Ext.define('Ux.pinchzoom.ImageViewer', {
                 backgroundImage : 'url(' + me.getPreviewSrc() + ')',
                 backgroundPosition : 'center center',
                 backgroundRepeat : 'no-repeat',
-                webkitBackgroundSize : 'contain'
+                '-webkitBackgroundSize' : 'cover'
             });
         }
 

@@ -22,54 +22,14 @@ Ext.define("GayGuideApp.view.phone.PlacesPixMenu", {
 			}]
 		},{
 			xtype:            'carousel',
-			direction:        'horizontal',
+			direction:        'vertical',
 			indicator:        false,
-            cls:              'ggv-pixmenu-carousel noSliderToolbar',
+            cls:              'ggv-pixmenu-carousel',
             defaults: {
 				mode:             'background',
                 styleHtmlContent: true,
 				styleHtmlCls:     'ggv-pixmenu-text'
-
-            },
-        
-//            items: [
-//                {
-//					xtype: 'img',
-//                  src :  'resources/images/Daylife.jpg',
-//					html:  'Daylife',
-//					listeners: {
-//						tap: function() {
-//							if (GayGuideApp.ggvstate)
-//								GayGuideApp.ggvstate['placesList'] = null;
-//							GayGuideApp.app.getApplication().redirectTo('placeslist/D', true);
-//						}
-//					}
-//                },
-//				{
-//					xtype: 'img',
-//                    src :  'resources/images/Nightlife.jpg',
-//					html:  'Nightlife',
-//					listeners: {
-//						tap: function() {
-//							if (GayGuideApp.ggvstate)
-//								GayGuideApp.ggvstate['placesList'] = null;
-//							GayGuideApp.app.getApplication().redirectTo('placeslist/N', true);
-//						}
-//					}
-//                },
-//				{
-//					xtype: 'img',
-//                    src :  'resources/images/Restaurants.jpg',
-//					html:  'Restaurants',
-//					listeners: {
-//						tap: function() {
-//							if (GayGuideApp.ggvstate)
-//								GayGuideApp.ggvstate['placesList'] = null;
-//							GayGuideApp.app.getApplication().redirectTo('placeslist/R', true);
-//						}
-//					}
-//                }
-//            ]
+            }
 		}]
     }
 });

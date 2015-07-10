@@ -39,6 +39,10 @@ Ext.application({
         'GayGuideApp.controller.override.History',
         'GayGuideApp.controller.override.Map',
         'GayGuideApp.controller.override.List',
+        //'GayGuideApp.controller.override.Img',
+        'GayGuideApp.controller.override.PaintMonitor',
+        'GayGuideApp.controller.override.SizeMonitor',
+        
         'Ext.MessageBox',
         'Ext.DateExtras',
         
@@ -210,7 +214,7 @@ Ext.application({
                 },
                 longpress: {
                     xclass:       'Ext.event.recognizer.LongPress',
-                    minDuration:  400
+                    minDuration:  200
                 }
             }
         }
@@ -224,7 +228,7 @@ Ext.application({
      *
      */
     launch: function() {
-        console.log('ggvApp.v2.3.1  production');
+        console.log('ggvApp.v2.4.1  production');
         //alert('launch');
         
         if (typeof StatusBar   !== 'undefined') {

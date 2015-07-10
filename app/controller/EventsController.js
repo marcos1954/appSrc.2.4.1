@@ -130,7 +130,7 @@ Ext.define("GayGuideApp.controller.EventsController", {
             sy = 0;
             
         target.list.deselectAll(true, true);
-        target.list.select(0, false, true);
+        target.list.select(1, false, true);
         target.afterActionCloseRequested(target);
         
         if (!target.container.down('#eventsList')) {

@@ -557,7 +557,7 @@ Ext.define("GayGuideApp.controller.MainController", {
         Ext.Viewport.setMasked(GayGuideApp.ggv.loadMask);
         
         
-        GayGuideApp.cards.placesPixMenu.destroy();
+        GayGuideApp.cards.placesPixMenu && GayGuideApp.cards.placesPixMenu.destroy();
         GayGuideApp.cards.placesPixMenu = null;
 
         ///////////////////////////////////////////////////////////////

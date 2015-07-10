@@ -117,7 +117,7 @@ Ext.define("GayGuideApp.controller.PlacesController", {
         if (target.getActiveItem().getId() == 'placesListCard' ) {
             target.animateActiveItem(pm, {
                 type: 'slide',
-                direction: 'right',
+                direction: 'right'
             });
         }
         else {
@@ -175,13 +175,14 @@ Ext.define("GayGuideApp.controller.PlacesController", {
      *   displays top level MAIN PIX MENU of "directory" (places)
      */
     showPlacesPixMenu: function() {
+        var nav    = Ext.Viewport.down('slidenavigationview');
+        
+        if (!nav) return;
+
         this.log("showPlacesPixMenu");
-        GayGuideApp.ggv.clearStatusBar();
-
-        var nav    = Ext.Viewport.down('slidenavigationview'),
-            target = nav.container,
+        var target = nav.container,
             pm     = Ext.getCmp('placesPixMenuCard');
-
+        GayGuideApp.ggv.clearStatusBar();
         this.doNavSelectDisplay('PixMenu');
         nav.afterActionCloseRequested(nav);
 
@@ -196,7 +197,7 @@ Ext.define("GayGuideApp.controller.PlacesController", {
         if (target.getActiveItem() && target.getActiveItem().getId() == 'placesListCard' ) {
             target.animateActiveItem(pm, {
                 type: 'slide',
-                direction: 'right',
+                direction: 'right'
             });
         }
         else {
@@ -228,18 +229,36 @@ Ext.define("GayGuideApp.controller.PlacesController", {
                 id: 'placesPixMenuCard'
             }
         );
-        
 
         var records = store.getRange();
         var carousel = pm.down('carousel');
         carousel.removeAll();
+        
+        //carousel.add({
+        //    xtype: 'img',
+        //    src :  'resources/images/calendar.jpg',
+        //    html:  'Daily Calendar',      //Ux.locale.Manager.get('places.categories.'+record.data.localeKey).menuName,
+        //    mode:             'background',
+        //    styleHtmlContent: true,
+        //    styleHtmlCls:     'ggv-pixmenu-text',
+        //    
+        //    listeners: {
+        //        tap: function() {
+        //            GayGuideApp.app.getApplication().redirectTo('eventslist', true);
+        //        }
+        //    } 
+        //});
+        
         
         records.forEach(function(record) {
             if (record.data.pixname.length) {
                 carousel.add({
                     xtype: 'img',
                     src :  'resources/images/'+record.data.pixname,
-                    html:  Ux.locale.Manager.get('places.categories.'+record.data.localeKey).menuName,
+                    
+                    html:  Ux.locale.Manager.get('places.categories.'+record.data.localeKey).menuName+
+                            '<br><div class=ggv-pixmenu-aux>'+Ux.locale.Manager.get('places.categories.'+record.data.localeKey).auxText +'</div>',
+
                     mode:             'background',
                     styleHtmlContent: true,
                     styleHtmlCls:     'ggv-pixmenu-text',
@@ -299,7 +318,7 @@ Ext.define("GayGuideApp.controller.PlacesController", {
         if (target.getActiveItem().getId() == 'placesListCard' ) {
             target.animateActiveItem(catList, {
                 type: 'slide',
-                direction: 'right',
+                direction: 'right'
             });
         }
         else {
