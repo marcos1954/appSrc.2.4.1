@@ -12,7 +12,8 @@
             "myfavorites" : "Mis Favoritos",
             "mynotes"     : "Mis Notas",
             "gallery"     : "Fotos",
-			"recents"     : "Visto Recientemente"
+			"recents"     : "Visto Recientemente",
+            "PIXmenu"     : "Vallarta Gay"
         },
         "group" :  {
             "directory" : "Directorio",
@@ -20,7 +21,8 @@
             "map"       : "Mapa",
             "settings"  : "Ajustes",
             "favorites" : "Mi PV Gay",
-            "gallery"   : "Galeria"
+            "gallery"   : "Galeria",
+            "gayvallarta"   : "&nbsp;"
         }
     },
 	
@@ -59,6 +61,9 @@
         "menu" : {
             "title"  : "Directorio de PVR Gay"
         },
+		"pixmenu" : {
+			"title" : "Vallarta Gay"
+		},
         "tab" : {
             "info"   : "Info",
             "photos" : "Fotos",

@@ -56,8 +56,9 @@ Ext.define("GayGuideApp.view.phone.Main", {
 				xtype:  'container',
 				docked: 'top',
 				cls:    'menuheader',
-				style:  'background-size: 100px 55px; background-repeat: no-repeat;background-position: center top;',
-				height: 50,
+				//style:  'background-size: 100px 55px; background-repeat: no-repeat;background-position: center top;',
+				style:  'background-repeat: no-repeat;background-position: center top;',
+				height: 100,
 				width:  200
 			},{
 				xtype:       'formpanel',
@@ -100,12 +101,13 @@ Ext.define("GayGuideApp.view.phone.Main", {
 		 *  Example of how to re-order the groups.
 		 */
 		groups: {
-			'Directory': 3,
-			'Pictures':  5,
-			'Calendar':  1,
-			'Map':       2,
-			'Favorites': 4,
-			'Settings':  6
+			'Gay Vallarta':    1,
+			'Directory': 4,
+			'Pictures':  6,
+			'Calendar':  2,
+			'Map':       3,
+			'Favorites': 5,
+			'Settings':  7
 		},
 
 		/*
@@ -128,6 +130,17 @@ Ext.define("GayGuideApp.view.phone.Main", {
 		},
 
 		items: [{
+			title:            'Browse Menu',
+			name:             'PixMenu',
+			group:            'Gay Vallarta',
+			titleKey:         'navlist.title.PIXmenu',
+			groupKey:         'navlist.group.gayvallarta',
+			handler: function(slideNav, target, config) {
+				if (GayGuideApp.ggvstate)
+					GayGuideApp.ggvstate['placesList'] = null;
+				GayGuideApp.app.getApplication().redirectTo('placespixmenu', true);
+			}
+		},{
 			title:            'Gay PV Directory',
 			name:             'Gay PV Directory',
 			group:            'Directory',

@@ -15,6 +15,9 @@ Ext.define("GayGuideApp.model.Menu", {
 			name: "localeKey",
 			type: "string"
 		},{
+			name: "pixname",
+			type: "string"
+		},{
 			name: "menuOrder",
 			type: "int"
 		},{

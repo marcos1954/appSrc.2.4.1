@@ -30,6 +30,7 @@ Ext.define("GayGuideApp.controller.GalleryController", {
         },
 
         refs: {
+            images: 'img',
             galleryItem:    'galleryitem > img[name="pix"]',
             thumbItem:      '#GalleryThumbsContainer > img',
             galleryBack:    'gallerytablet > toolbar > button[itemId="galleryBack"]',
@@ -58,8 +59,20 @@ Ext.define("GayGuideApp.controller.GalleryController", {
             },
             galleryBizMore: {
                 tap:               'doBizMoreInfoTap'
-            }
+            },
+            //images: {
+            //    tap: 'tap1',
+            //    load: 'loaded'
+            //}
         }
+    },
+    
+tap1:    function () {
+        alert('tap');
+    },
+    
+    loaded:    function () {
+        alert('loaded');
     },
 
     /**
@@ -520,7 +533,7 @@ Ext.define("GayGuideApp.controller.GalleryController", {
             k = 'http://www.gayguidevallarta.com/img.io/timthumb.php?';
             
             imgSrc150   = k + 'h=150&w=150&src=' + j;
-            imgSrcLarge = k + 'h=1024&w=1024&src=' + j;
+            imgSrcLarge = k + 'w=1024&src=' + j;
   
             if (j) {
                 thumbItems.push(GayGuideApp.isTablet()?{
@@ -725,7 +738,7 @@ Ext.define("GayGuideApp.controller.GalleryController", {
             carouselItems.push({
                 xtype:          'imageviewer',
                 style:          'background-color: #333;',                
-                imageSrc:       'http://www.gayguidevallarta.com/img.io/timthumb.php?w=1024&h=1024&src=' +
+                imageSrc:       'http://www.gayguidevallarta.com/img.io/timthumb.php?w=1024&src=' +
                                 record.data.path.replace('http://www.gayguidevallarta.com','') + record.data.file,
                 layout:         'fit',
                 loadingMessage: Ux.locale.Manager.get("misc.loadLocaleMsg", "Loading ..."),

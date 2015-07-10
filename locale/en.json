@@ -12,7 +12,8 @@
             "myfavorites" : "My Favorites",
             "mynotes"     : "My Notes",
 			"recents"     : "Recently Viewed",
-            "gallery"     : "Gallery"
+            "gallery"     : "Gallery",
+            "PIXmenu"     : "Gay Vallarta"
         },
         "group" :  {
             "directory" : "Directory",
@@ -20,7 +21,8 @@
             "map"       : "Map",
             "settings"  : "Settings",
             "favorites" : "My Gay PV",
-            "gallery"   : "Pictures"
+            "gallery"   : "Pictures",
+            "gayvallarta"   : "&nbsp;"
         }
     },
 	
@@ -59,6 +61,9 @@
         "menu" : {
             "title" : "Gay PVR Directory"
         },
+        "pixmenu" : {
+            "title" : "Gay Vallarta"
+        },
         "tab" : {
             "info"   : "Info",
             "photos" : "Photos",
@@ -80,8 +85,6 @@
                 "auxText"  : "Comedy Performaces, Musicals, Plays and more"
             
             },
-            
-            
             "restaurants" : {
                 "menuName" : "Restaurants",
                 "auxText"  : "From Fine Dining to Taco Stands"

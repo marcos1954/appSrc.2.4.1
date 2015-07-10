@@ -29,12 +29,14 @@ Ext.define("GayGuideApp.controller.PlacesController", {
             'placeslist/:cat':   'showPlacesList',
             'placescat/:cat':    'showPlacesList',
             'placesmenu':        'showPlacesMenu',
-            'placescats':        'showCatList'
+            'placescats':        'showCatList',
+            'placespixmenu':     'showPlacesPixMenu'
         },
 
         refs: {
             placesMenu:          '#placesMenuCard list',
             placesMenuNav:       '#placesMenuCard > titlebar  button[iconCls="list"]',
+            placesPixMenuNav:       '#placesPixMenuCard > titlebar  button[iconCls="list"]',
 
             placesList:          'placeslist',
             placesListCard:      'placeslistcard',
@@ -52,6 +54,9 @@ Ext.define("GayGuideApp.controller.PlacesController", {
                 disclose:        'doMenuDisclose'
             },
             placesMenuNav: {
+                tap:             'doNavButtonTap'
+            },
+            placesPixMenuNav: {
                 tap:             'doNavButtonTap'
             },
 
@@ -112,7 +117,7 @@ Ext.define("GayGuideApp.controller.PlacesController", {
         if (target.getActiveItem().getId() == 'placesListCard' ) {
             target.animateActiveItem(pm, {
                 type: 'slide',
-                direction: 'right',
+                direction: 'right'
             });
         }
         else {
@@ -163,6 +168,117 @@ Ext.define("GayGuideApp.controller.PlacesController", {
         if (x == '+') x = 'alpha';
         this.redirectTo('placeslist/' + x);
     },
+    
+    /**
+     * @ private
+     * showPlacesPixMenu
+     *   displays top level MAIN PIX MENU of "directory" (places)
+     */
+    showPlacesPixMenu: function() {
+        var nav    = Ext.Viewport.down('slidenavigationview');
+        
+        if (!nav) return;
+
+        this.log("showPlacesPixMenu");
+        var target = nav.container,
+            pm     = Ext.getCmp('placesPixMenuCard');
+        GayGuideApp.ggv.clearStatusBar();
+        this.doNavSelectDisplay('PixMenu');
+        nav.afterActionCloseRequested(nav);
+
+        if (!target.down('#placesPixMenuCard')) {
+            if (!pm) {
+                pm = this.createPlacesPixMenu();
+            }
+        }
+        
+        // display the new view
+        //
+        if (target.getActiveItem() && target.getActiveItem().getId() == 'placesListCard' ) {
+            target.animateActiveItem(pm, {
+                type: 'slide',
+                direction: 'right'
+            });
+        }
+        else {
+            pm.down('carousel').setActiveItem(0);
+            target.setActiveItem(pm);
+        }
+
+        reportView('/touch/#placespixmenu', 'Places Pix Menu');
+    },
+
+    /**
+     * @private
+     * createPlacesPixList - responds to disclose event
+     *   in placesList view
+     */
+    createPlacesPixMenu: function() {
+        this.log('createPlacesPixMenu','GayGuideApp.cards.placesPixMenu is',!!GayGuideApp.cards.placesPixMenu);
+
+        var store = Ext.StoreManager.get('menu');
+        if (!store) {
+            alert('no menu store');
+            return null;
+        }
+        var pm = Ext.getCmp('placesPixMenuCard') || Ext.create(
+            GayGuideApp.isTablet()
+                ?'GayGuideApp.view.tablet.PlacesPixMenuTablet'
+                :'GayGuideApp.view.phone.PlacesPixMenu',
+            {
+                id: 'placesPixMenuCard'
+            }
+        );
+
+        var records = store.getRange();
+        var carousel = pm.down('carousel');
+        carousel.removeAll();
+        
+        //carousel.add({
+        //    xtype: 'img',
+        //    src :  'resources/images/calendar.jpg',
+        //    html:  'Daily Calendar',      //Ux.locale.Manager.get('places.categories.'+record.data.localeKey).menuName,
+        //    mode:             'background',
+        //    styleHtmlContent: true,
+        //    styleHtmlCls:     'ggv-pixmenu-text',
+        //    
+        //    listeners: {
+        //        tap: function() {
+        //            GayGuideApp.app.getApplication().redirectTo('eventslist', true);
+        //        }
+        //    } 
+        //});
+        
+        
+        records.forEach(function(record) {
+            if (record.data.pixname.length) {
+                carousel.add({
+                    xtype: 'img',
+                    src :  'resources/images/'+record.data.pixname,
+                    
+                    html:  Ux.locale.Manager.get('places.categories.'+record.data.localeKey).menuName+
+                            '<br><div class=ggv-pixmenu-aux>'+Ux.locale.Manager.get('places.categories.'+record.data.localeKey).auxText +'</div>',
+
+                    mode:             'background',
+                    styleHtmlContent: true,
+                    styleHtmlCls:     'ggv-pixmenu-text',
+                    
+                    listeners: {
+                        tap: function() {
+                            if (GayGuideApp.ggvstate)
+                                GayGuideApp.ggvstate['placesList'] = null;
+                            GayGuideApp.app.getApplication().redirectTo('placeslist/'+record.data.assocListSelect, true);
+                        }
+                    } 
+                });
+            }
+        });
+
+        GayGuideApp.cards.placesPixMenu = pm;  // eliminate this?? someday!
+
+        this.log('createPlacesPixMenu','GayGuideApp.cards.placesPixMenu SET', pm.getId());
+        return pm;
+    },
 
     /**
      * showCatList -
@@ -202,7 +318,7 @@ Ext.define("GayGuideApp.controller.PlacesController", {
         if (target.getActiveItem().getId() == 'placesListCard' ) {
             target.animateActiveItem(catList, {
                 type: 'slide',
-                direction: 'right',
+                direction: 'right'
             });
         }
         else {
@@ -308,6 +424,9 @@ Ext.define("GayGuideApp.controller.PlacesController", {
             mc.animateActiveItem(pl, { type: 'slide', direction: 'right' });
         }
         else if ((mc.getActiveItem().getItemId() == 'placesMenuCard')) {
+            mc.animateActiveItem(pl, { type: 'slide', direction: 'left' });
+        }
+        else if ((mc.getActiveItem().getItemId() == 'placesPixMenuCard')) {
             mc.animateActiveItem(pl, { type: 'slide', direction: 'left' });
         }
         else if ((mc.getActiveItem().getId() == 'catList')) {

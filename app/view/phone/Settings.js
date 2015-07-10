@@ -291,6 +291,16 @@ Ext.define('GayGuideApp.view.phone.Settings', {
 
         listeners: {
             painted: function() {
+				x = Ext.Viewport.query('#langfieldset')[0];
+				if (GayGuideApp.lang == 'en') {
+					x.getComponent(0).check();
+				}
+				else if (GayGuideApp.lang == 'es') {
+					x.getComponent(1).check();
+				}
+				else if (GayGuideApp.lang == 'fr') {
+					x.getComponent(2).check();
+				}
 				GayGuideApp.ggv.clearStatusBar();
                 reportView('/touch/settings');
             }
