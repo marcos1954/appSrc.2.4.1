@@ -14,7 +14,7 @@ Ext.define('Ux.homescreen.HomeScreen',{
 
 			var dismissed = localStorage.getItem('installapp') === '1';
 
-			if (Ext.browser.is.Standalone || Ext.browser.is('Sencha') || (!Ext.os.is('iOS')) || dismissed) {
+			if (true|| Ext.browser.is.Standalone || Ext.browser.is('Sencha') || (!Ext.os.is('iOS')) || dismissed) {
 				return;
 			}
 

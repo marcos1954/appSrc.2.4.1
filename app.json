@@ -104,7 +104,36 @@
          * List of items in the CACHE MANIFEST section
          */
         "cache": [
-            "index.html"
+            "index.html",
+
+            "resources/images/CasaCupula250x700v1.png",
+            "resources/images/NoImage.png",
+            "resources/images/Shopping.jpg",
+            "resources/images/header.jpg",
+            "resources/images/pix4.jpg",
+            "resources/images/Daylife.jpg",
+            "resources/images/NoPixBackground.jpg",
+            "resources/images/Shows.jpg",
+            "resources/images/header.png",
+            "resources/images/sunset.jpg",
+            "resources/images/Galleries.jpg",
+            "resources/images/Puerto_Vallarta_Beach.jpg",
+            "resources/images/ajax-loader.gif",
+            "resources/images/sunsettoday.jpg",
+            "resources/images/GymSpa.jpg",
+            "resources/images/RealEstate.jpg",
+            "resources/images/blue_dot_circle.png",
+            "resources/images/pix1.jpg",
+            "resources/images/LodgingSection.jpg",
+            "resources/images/Restaurants.jpg",
+            "resources/images/calendar.jpg",
+            "resources/images/pix2.jpg",
+            "resources/images/Nightlife.jpg",
+            "resources/images/Services.jpg",
+            "resources/images/cover.jpg",
+            "resources/images/pix3.jpg",
+            
+            "locale/lang.js"
         ],
         /**
          * List of items in the NETWORK section

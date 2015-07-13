@@ -47,6 +47,7 @@ Ext.application({
         'Ext.DateExtras',
         
         'Ux.homescreen.HomeScreen',
+        
         'Ux.storeview.StoreView',
         'Ux.locale.Manager',
         'Ux.locale.override.st.Component',
@@ -229,7 +230,6 @@ Ext.application({
      */
     launch: function() {
         console.log('ggvApp.v2.4.1  production');
-        //alert('launch');
         
         if (typeof StatusBar   !== 'undefined') {
             cordova.exec.setJsToNativeBridgeMode(cordova.exec.jsToNativeModes.XHR_NO_PAYLOAD);
@@ -245,8 +245,6 @@ Ext.application({
         
         Ext.defer(function() {Ext.fly('appLoadingIndicator').destroy();}, 3000);
         Ext.Viewport.bodyElement.on( 'resize', Ext.emptyFn, this, { buffer: 1} );
-        
-        //alert('end main launch');
     },
 
     onUpdated: function() {
