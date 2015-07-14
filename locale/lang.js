@@ -406,10 +406,10 @@ return;
 }
 
 function ggv_vsnDate() {
-	return  "V4.1.1<br />Build Version: master<br />Date: 2015-05-02 development ";
+	return  "V4.2.1<br />Build Version: master<br />Date: 2015-07-15 development ";
 }
 
-console.log('lang.js')
+//console.log('lang.js')
 
 
 
