@@ -45,7 +45,6 @@ Ext.define("GayGuideApp.view.tablet.PlacesCombo", {
                 cacheDirections:       false
             }]
         },{
-            //id:     'placesComboPhotos',
             itemId: 'placesComboPhotos',
             xtype:  'placesphotobar',
             height: '220px'

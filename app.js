@@ -42,6 +42,8 @@ Ext.application({
         //'GayGuideApp.controller.override.Img',
         'GayGuideApp.controller.override.PaintMonitor',
         'GayGuideApp.controller.override.SizeMonitor',
+                'GayGuideApp.controller.override.Device',
+
         
         'Ext.MessageBox',
         'Ext.DateExtras',
@@ -229,20 +231,20 @@ Ext.application({
      *
      */
     launch: function() {
-        console.log('ggvApp.v2.4.1  production');
+        console.log('ggvApp.v2.4.2 production');
         
         if (typeof StatusBar   !== 'undefined') {
             cordova.exec.setJsToNativeBridgeMode(cordova.exec.jsToNativeModes.XHR_NO_PAYLOAD);
             //StatusBar.overlaysWebView(false);
             StatusBar.styleBlackOpaque();
-            
-            if (navigator.splashscreen && navigator.splashscreen.hide) {
-                setTimeout(function() {
-                    navigator.splashscreen.hide();
-                }, 2000);
-            }
         }
         
+        if (navigator.splashscreen && navigator.splashscreen.hide) {
+            setTimeout(function() {
+                navigator.splashscreen.hide();
+            }, 2000);
+        }
+
         Ext.defer(function() {Ext.fly('appLoadingIndicator').destroy();}, 3000);
         Ext.Viewport.bodyElement.on( 'resize', Ext.emptyFn, this, { buffer: 1} );
     },

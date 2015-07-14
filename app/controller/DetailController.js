@@ -586,18 +586,21 @@ Ext.define("GayGuideApp.controller.DetailController", {
             
             // change map settings to match current gps settings
             //
-            if (GayGuideApp.ggv.gps != 'off') {
-                card.down('#detailMap').setCacheFitBounds(true);
-                card.down('#detailMap').setCenter(false);
-                card.down('#detailMap').setCacheLocation(true);
-                card.down('#detailMap').setCacheDirections(GayGuideApp.ggv.directions != 'off');
-            }
-            else {
-                card.down('#detailMap').setCacheFitBounds(false);
-                card.down('#detailMap').setCenter(true);
-                card.down('#detailMap').setZoom(15);
-                card.down('#detailMap').setCacheLocation(false);
-                card.down('#detailMap').setCacheDirections(false);
+            if (card.down('#detailMap')) {
+
+                if (GayGuideApp.ggv.gps != 'off') {
+                    card.down('#detailMap').setCacheFitBounds(true);
+                    card.down('#detailMap').setCenter(false);
+                    card.down('#detailMap').setCacheLocation(true);
+                    card.down('#detailMap').setCacheDirections(GayGuideApp.ggv.directions != 'off');
+                }
+                else {
+                    card.down('#detailMap').setCacheFitBounds(false);
+                    card.down('#detailMap').setCenter(true);
+                    card.down('#detailMap').setZoom(15);
+                    card.down('#detailMap').setCacheLocation(false);
+                    card.down('#detailMap').setCacheDirections(false);
+                }
             }
 
             card._ggv_selected = conf._ggv_selected;
@@ -675,14 +678,12 @@ Ext.define("GayGuideApp.controller.DetailController", {
         Ext.each(record.events().getRange(0), function(model, index) {
             events.push(model.getData());
         });
-
         c.udata = data;
         c.udata.eventArray = events;  //!! do we need to clean this up later?
         Ext.each(c.getInnerItems(), function(v) {
             v.items.items[0].setData(c.udata);
         });
         this.updatePhotoRecords(c, data);
-
         //  set button attributes for this data record
         //
         f = GayGuideApp.store.favorites.findRecord('bid', record.data.id, 0, false, false, true);

@@ -9,7 +9,7 @@ Ext.define("GayGuideApp.view.phone.DetailPhone", {
     requires: [
         'Ext.Toolbar',
         'Ext.Anim',
-        'Ux.tab.OptimizedTab',
+        //'Ux.tab.OptimizedTab',
         'Ux.pinchzoom.ImageViewer',
         'GayGuideApp.view.PlacesEvents',
         'GayGuideApp.view.PlacesInfo',
@@ -125,7 +125,7 @@ Ext.define("GayGuideApp.view.phone.DetailPhone", {
                 itemId:     'placesEvents',
                 xtype:      'placesevents'
             }],
-            xtype:          'placesevents',
+            //xtype:          'placesevents',
             layout:         'card',
             title:          'EVENTS',
             enableLocale:   true,
@@ -174,7 +174,9 @@ Ext.define("GayGuideApp.view.phone.DetailPhone", {
     scrollToTop: function(me) {
         me.query('#Photo')[0].setActiveItem(0);
         Ext.each([ '#placesEvents', '#placesInfo', '#placesEvents'], function( item) {
-            me.query(item)[0].getScrollable().getScroller().scrollTo(0, 0);
+            if (me.query(item)[0]) {
+                me.query(item)[0].getScrollable().getScroller().scrollTo(0, 0);
+            }
         });
     }
 });

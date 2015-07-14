@@ -23,7 +23,7 @@ Ext.define("GayGuideApp.view.PlacesEvents", {
 		 '<tpl if="list_phone">',trans('Phone', 'Ph: ')+'{list_phone}<br />','</tpl>',
 		'</div>',
 		'</div>',
-
+		
 		'<div class="desc">',
 		 '<center><span style="font-size: 20px; font-weight: bold;">'+trans('Calendar')+'</span></center>',
 		 
