@@ -71,7 +71,9 @@ Ext.application({
         'Ext.event.publisher.ComponentDelegation',
         'Ext.event.publisher.ComponentPaint',
         'Ext.event.publisher.ElementPaint',
-        'Ext.event.publisher.ElementSize'
+        'Ext.event.publisher.ElementSize',
+        'Ext.device.Geolocation'
+        
     ],
 
     profiles: [
@@ -244,6 +246,19 @@ Ext.application({
                 navigator.splashscreen.hide();
             }, 2000);
         }
+        //Ext.defer(function(){
+        //    console.log('testing GPS');
+        //    Ext.device.Geolocation.getCurrentPosition({
+        //        success: function(position) {
+        //            console.log(position.coords);
+        //        },
+        //        failure: function() {
+        //            console.log('something went wrong!');
+        //        }
+        //    });
+        //}, 15000);
+        
+        localStorage.clear();
 
         Ext.defer(function() {Ext.fly('appLoadingIndicator').destroy();}, 3000);
         Ext.Viewport.bodyElement.on( 'resize', Ext.emptyFn, this, { buffer: 1} );

@@ -138,6 +138,7 @@ Ext.define("GayGuideApp.controller.MapaController", {
      */
     launch: function () {
         //alert('mapcontroller launch');
+        console.log('navigator', navigator);
 
         GayGuideApp.ggv.geo = Ext.create('Ext.util.GeoLocation', {
             id:                 'geoLocation',

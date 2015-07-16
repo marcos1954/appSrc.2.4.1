@@ -59,7 +59,7 @@ Ext.define("GayGuideApp.controller.GalleryController", {
             },
             galleryBizMore: {
                 tap:               'doBizMoreInfoTap'
-            },
+            }
             //images: {
             //    tap: 'tap1',
             //    load: 'loaded'
